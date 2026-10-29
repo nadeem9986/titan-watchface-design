@@ -1,0 +1,69 @@
+# Watch Face Concept Directions
+
+Five original directions, each built to survive the judging pillars: glanceability first, polish second, complications with a purpose, clean file hygiene. Every one respects the kit rules: no logos, 21 px minimum text, 25 px minimum icons, Zone A for data, Zone B for decoration, commercially free fonts only.
+
+---
+
+## 1. REACTOR - the JARVIS one (Retro-Futuristic / your signature taste)
+
+A Tony Stark HUD translated to the wrist without becoming a theme-park watch face.
+
+- **Face:** true black background. A thin cyan arc ring sweeps Zone B as a 60-second progress arc - the "arc reactor" charge ring. Tick marks snap to the 30-degree grid.
+- **Time:** large mono time dead centre (Departure Mono, ~96 px), with a smaller blinking colon. Under it, a terminal-style line: `> FRI 30 OCT | 62% BATT` in the same mono at 21 px.
+- **Complications:** four HUD readouts at 12 / 3 / 6 / 9 o'clock on the inner grid lines - heart rate, steps, battery, weather - each a 25 px line icon plus a mono numeric value, no labels.
+- **Detail that wins judges:** on wake, the ring does a 300 ms "boot" sweep before settling (describe this in the concept note; show it as a second frame named "Wake Boot State").
+- **AOD state:** ring drops to 1 px dim amber, time only, everything else off. Black everywhere = real OLED power savings, which is a Technical Execution talking point.
+- **Palette (60-30-10):** 60 black, 30 graphite/cyan-grey structure lines, 10 electric cyan accent.
+- **Category:** Retro-Futuristic. Pairs naturally with both Titan (premium dark) and Fastrack (techy youth) positioning.
+
+## 2. HERITAGE - premium Titan analog (Luxury Analog)
+
+Classic Titan dress-watch DNA on a smart display.
+
+- **Face:** deep charcoal radial gradient dial, hairline gold indices at all 12 positions (30-degree grid doing the work), no numerals except a single applied "12".
+- **Hands:** slim dauphine-style hour/minute, needle second hand in a single warm gold accent.
+- **Complications:** one subdial at 6 o'clock carrying day + date; one minimal battery arc tucked inside the outer minute track. Nothing else. Restraint is the concept.
+- **Palette:** 60 charcoal black, 30 warm ivory (indices, text), 10 brushed gold.
+- **Category:** Luxury Analog. This is the entry aimed straight at Titan's brand team.
+
+## 3. PULSE - Fastrack youth energy (Fitness & Metrics)
+
+Big, loud, glanceable - built for a 20-year-old who checks steps more than the time.
+
+- **Face:** oversized gradient ring in Zone B that fills with daily step-goal progress (electric violet to hot coral). Ring gaps at 12 / 3 / 6 / 9 keep it readable.
+- **Time:** extra-bold grotesk (e.g. Archivo Black or Inter ExtraBold, both OFL), slightly bottom-weighted so the ring owns the top half.
+- **Complications:** three pill chips along the bottom curve - steps, calories, heart rate - icon + number, 25 px icons, 21 px type.
+- **Palette:** 60 near-black, 30 ring gradient, 10 white-hot accent on the time.
+- **Category:** Fitness & Metrics. The Fastrack-aimed entry.
+
+## 4. ORBIT - data as satellites (Abstract Art / Minimalist hybrid)
+
+Complications treated as planets on fixed orbits - the 30-degree grid made visible as the design itself.
+
+- **Face:** faint concentric orbit rings etched in Zone B. Each complication is a small glowing dot sitting on its orbit at a 30-degree position; the dot's fill level encodes its value (battery dot literally drains).
+- **Time:** clean geometric sans centred, medium weight, with date directly beneath.
+- **Interaction story:** dots brighten in sequence on wake, like a system coming online - a quieter cousin of the REACTOR boot idea.
+- **Palette:** 60 midnight blue-black, 30 desaturated slate orbits, 10 single signal colour for the active dot (swap per complication state).
+- **Category:** Abstract Art. The most original layout of the set - judges reward a composition they have not seen.
+
+## 5. MONO - your monochrome taste, weaponized (Minimalist)
+
+Grey/white/black only, no colour at all - the anti-everything face.
+
+- **Face:** matte black, one oversized light-grey mono time (Departure Mono again - its pixel texture reads beautifully at 2x export), date in small caps beneath.
+- **Complications:** invisible until needed - four icon-only slots at the diagonals, white line icons at exactly 25 px, no numbers unless the value is abnormal (battery under 20% shows the number).
+- **Detail:** a 1 px white tick travels the outer edge once per minute - the only motion on the face.
+- **Palette:** 60 black, 30 grey structure, 10 white. 60-30-10 in pure value steps.
+- **Category:** Minimalist. Cheapest to build, fastest to iterate, and it photographs beautifully in a submission deck.
+
+---
+
+## Suggested strategy
+
+You get up to 10 Figma entries and 2 attempts each. A strong portfolio spread:
+
+1. Submit **REACTOR** and **MONO** early (they are closest to your existing taste, fastest to execute well)
+2. Then **HERITAGE** (Titan-pleaser) and **PULSE** (Fastrack-pleaser) to cover both brands
+3. **ORBIT** last, as the wild card, if time allows before Dec 6
+
+Every concept note should name the glanceability decision, the complication logic, and the AOD behaviour in its 2-3 sentences - that is three of the four judging pillars covered in the text alone.

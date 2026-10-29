@@ -1,0 +1,131 @@
+# Titan Watch Face Design Challenge 2026 - Designer's Reference Guide
+
+Everything in this file is grounded in the two official documents in `original-kit/`:
+the Titan Smart / Fastrack Smart **Design Kit** (21-page PDF) and the **Participant Handbook & Submission Guidelines** (Hack2skill).
+
+- Challenge: "Design Time Your Way" - Titan Smart + Fastrack Smart, powered by Hack2skill
+- Runs: Oct 28 - Dec 6, 2026 (online). Registration + submissions close **Dec 6, 2026**
+- Event page: https://hack2skill.com/event/watchfacedesignchallenge2026/
+- Individual participation only. Free to enter. AI tools fine for ideation; the final design must be your own work.
+
+---
+
+## 1. Canvas setup
+
+**No canvas size is specified anywhere in the Design Kit or the Handbook.** Neither document gives pixel dimensions.
+
+Recommended baseline: **466 x 466 px round frame**. Titan's current round AMOLED smartwatches (e.g. Titan Crest, 1.43" AMOLED) run at 466 x 466, and it is the standard round-watch density for this class of device. Set up in Figma as:
+
+- One round frame, 466 x 466, per watch face state
+- Optional: a second frame at 360 x 360 to sanity-check legibility on smaller displays
+- Export previews at **2x or 3x** (932 or 1398 px) as the Handbook requires
+
+Layout grid from the kit's "Tech Pointers" page:
+
+- **Zone A (inner circle):** time and data components only
+- **Zone B (outer ring):** decorations only
+- Use **30-degree radial divisions** (12 sectors, like clock hours) for placing components, and keep the overall design **centre-aligned**
+- In Figma: draw a circle, duplicate it at 30-degree rotations, or use a rotated-line component to build the guide overlay. Keep the guide in a locked layer you hide before export
+
+## 2. Hard rules from the Design Kit
+
+- **Text: minimum 21 px.** The kit explicitly marks "21 pixels" and below as too small to read on a watch face.
+- **Icons: minimum 25 px.** Anything smaller is not visible on the watch.
+- **Fonts must be commercially free to use.** Kit-recommended sources: Google Fonts, Fontshare, freefaces.gallery. (Your favorite, Departure Mono, is SIL OFL - clear to use.)
+- **Do NOT put any brand logo in your design.** The kit's final-page note is explicit: "Please do not add logo in your watchface designs." No Titan logo, no Fastrack logo, nothing.
+- Icons should denote an activity/element with no words; kit's complication set to draw from: calories, steps, distance, weather, sleep, SpO2, temperature, stress, blood pressure, heart rate, battery, Bluetooth connectivity.
+
+## 3. Anatomy vocabulary (from the kit)
+
+Indices, analog hands (hour/minute/seconds), hour numberings, day/date/month, complications, digital time, brand logo slot (leave empty per the rule above), compass. The kit stresses its anatomy pages are reference only - layouts and complications can differ per face.
+
+Digital component building blocks shown:
+
+- **Time blocks:** 10:25 / 10:25:30 / 22:25
+- **Date blocks:** FRI 27 / 27/05 / 27 MAY
+- **Progress bars**
+
+## 4. Colour
+
+The kit teaches the **60-30-10 rule**: 60% dominant (usually neutral/base), 30% secondary (headlines, graphic elements), 10% accent (highlights, key elements). It also includes a colour-psychology reference card (red = power/energy, blue = trust/calm, gold = luxury, black = boldness/luxury, green = balance/health, etc.).
+
+Practical translation for a watch face:
+
+- Pick one dominant background family, one structural secondary, and a single accent used only for the most glanceable signal (time highlight, progress state, or one complication)
+- On OLED round watches, true black backgrounds look native and save battery - a strong default for the dominant 60%
+- Check contrast at arm's length, not on your monitor at 200% zoom
+
+## 5. Principles of Design (the kit's list)
+
+Emphasis, Balance, Contrast, White Space, Rhythm, Pattern, Repetition, Proportion, Movement, Hierarchy, Variety, Unity. Judges will read your face through exactly this lens - the Handbook's "Visual Polish" pillar is these words in disguise.
+
+## 6. Judging pillars, translated into design decisions
+
+From the Handbook's Evaluation Pillars section:
+
+| Pillar | What they ask | What it means for your design |
+|---|---|---|
+| Glanceability & Ergonomics | Time readable at arm's length in 1-2 seconds; calibrated visual hierarchy | Time is the largest element by a wide margin. One focal point. Test by squinting: time should survive the squint. Keep the 21 px / 25 px floors. |
+| Visual Polish & Aesthetics | Original design language, colour contrast balance, typography sophistication, pixel precision | Align everything to the 30-degree grid. Consistent stroke widths on icons. No half-pixel offsets. One font family, 2-3 weights max. |
+| Contextual Versatility | Balance functional complications (steps, battery, date, heart rate) with visual elegance | 2-4 complications, not 8. Each one earns its place. Show an AOD/ambient state if you can - it proves you thought about real usage. |
+| Technical Execution | Organized source layers, vector scalability, file hygiene, guideline adherence | Named frames and layers, vectors not raster hacks, everything embedded in-canvas, exact export spec followed. |
+
+## 7. Submission requirements (Figma track - your track)
+
+From the Handbook, Track B:
+
+1. **Figma link with "Can Edit" permissions** enabled
+2. All custom vectors, icons, and typography **embedded or converted to vector paths** in-canvas
+3. **Professional layer hygiene:** clean artboards, descriptive frame/layer names, zero "Frame 142" style unnamed layers
+4. **Distinct labeled frames per state:** e.g. "Active Display", "Always-On / Ambient", "Interactive / Complications"
+5. **High-res PNG exports at 2x or 3x** of the main frames
+6. **Metadata:** Design Title, Theme/Category (e.g. Minimalist, Luxury Analog, Fitness & Metrics, Retro-Futuristic, Typographic, Abstract Art), and a **2-3 sentence concept description** covering design rationale and usability
+
+Metadata template (from the Handbook):
+
+```
+[SUBMISSION METADATA]
+1. Participant Name:
+2. Design Title / Name:
+3. Tool Used: Figma
+4. Theme / Category:
+5. Concept Rationale: (2-3 sentences for Figma)
+6. File Access Link: (Figma URL with Edit access)
+```
+
+### Quotas and attempts (note: two numbers that look conflicting but aren't)
+
+- **Max 20 submissions total:** up to 10 via Adobe CC + up to 10 via Figma
+- Portal flow: Submissions > Ongoing Submission > Project Submissions > Titan Watch Face Design Challenge 2026
+- "Add submission" creates a new slot per concept (portal text says "up to 10 entries")
+- **2 attempts per submission** - re-uploads allowed, and only your latest version is evaluated
+
+## 8. Pre-submission checklist
+
+Design:
+- [ ] Time readable in 1-2 seconds at arm's length (squint test at 100% zoom)
+- [ ] All text >= 21 px, all icons >= 25 px
+- [ ] Time and data inside Zone A (inner circle); decorations only in Zone B
+- [ ] Components snapped to the 30-degree grid, centre-aligned overall
+- [ ] 60-30-10 colour split; one accent only
+- [ ] No brand logos anywhere
+- [ ] Every font is commercially free (Google Fonts / Fontshare / freefaces.gallery) - note the license in your file
+- [ ] 2-4 complications max, each with a >= 25 px icon
+- [ ] AOD/ambient state designed (dimmed, simplified, black-heavy)
+
+File hygiene:
+- [ ] Separate named frames: Active Display / Always-On / Interactive
+- [ ] Every layer named descriptively - no "Frame 142", no "Rectangle 87"
+- [ ] Icons and type as vectors (outline strokes, flatten where needed)
+- [ ] Guide/grid layers locked and hidden
+
+Submission:
+- [ ] Figma link sharing set to **Can Edit** (test in an incognito window)
+- [ ] PNGs exported at 2x or 3x
+- [ ] Metadata block filled (title, category, 2-3 sentence rationale, link)
+- [ ] Submitted via portal; remember you have 2 attempts - submit a strong version early, refine before Dec 6
+
+## 9. Key dates and prizes
+
+- **Deadline: Dec 6, 2026** (registration and submissions)
+- Prizes (per the event page as previously read): Rs 50,000 / Rs 35,000 / Rs 20,000 for the top three, plus a possible internship with Titan's design team
